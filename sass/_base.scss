@@ -1,0 +1,46 @@
+:root {
+  // --color-primary:
+  --color-primary--dark: rgb(82, 26, 197);
+  --color-primary--light: rgb(118, 23, 197);
+  --bg-primary: linear-gradient(
+    to right,
+    var(--color-primary--dark),
+    var(--color-primary--light)
+  );
+}
+
+@font-face {
+  font-family: 'iranSans';
+  src: url(../fonts/IRANSansWeb.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-weight: 400;
+  line-height: 1.8;
+  direction: rtl;
+  font-family: 'iranSans';
+}
+
+img {
+  max-width: 100%;
+}
+
+.heading-primary {
+  font-size: 4rem;
+}

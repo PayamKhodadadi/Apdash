@@ -1,0 +1,24 @@
+.header__main {
+  background-image: var(--bg-primary);
+  padding: 2rem 0;
+}
+
+.section-hero {
+  background-image: var(--bg-primary);
+  color: #fff;
+}
+
+.container {
+  max-width: 112.8rem;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.col {
+  width: 100%;
+}

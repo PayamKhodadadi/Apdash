@@ -1,0 +1,26 @@
+.nav__list {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav__item {
+  list-style: none;
+}
+
+.nav__link:link,
+.nav__link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #ddd;
+}
+
+.hero {
+  &__text {
+    font-size: 2rem;
+  }
+  &__img {
+    &-box {
+      text-align: center;
+    }
+  }
+}
