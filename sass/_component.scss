@@ -1,26 +1,100 @@
-.nav__list {
-  display: flex;
-  gap: 2rem;
+/////////////////////////
+/// NAVIGATION
+.nav {
+  &__list {
+    display: flex;
+    gap: 2rem;
+  }
+
+  &__item {
+    list-style: none;
+  }
+
+  &__link:link,
+  &__link:visited {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #ddd;
+  }
+
+  &__link:hover,
+  &__link:active {
+    color: #fff;
+  }
 }
 
-.nav__item {
-  list-style: none;
-}
-
-.nav__link:link,
-.nav__link:visited {
-  text-decoration: none;
-  font-size: 1.6rem;
-  color: #ddd;
-}
-
+/////////////////////////
+/// HERO SECTION
 .hero {
   &__text {
     font-size: 2rem;
+    margin-bottom: 3rem;
   }
+
   &__img {
     &-box {
       text-align: center;
     }
+  }
+
+  &__counter {
+    display: flex;
+
+    &-item {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    &-number {
+      font-size: 2.5rem;
+    }
+    &-title {
+      font-size: 1.8rem;
+    }
+    &-icon {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.cta-btns {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  color: #fff;
+  font-size: 1.4rem;
+  margin-bottom: 3rem;
+}
+
+.btn {
+  &--download:link,
+  &--download:visited {
+    color: #fff;
+    padding: 1rem 4rem;
+    text-decoration: none;
+    background-color: rgb(191, 0, 220);
+    border: none;
+    border-radius: 100px;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+  }
+  &--download:hover,
+  &--download:active {
+    background-color: rgb(147, 0, 169);
+  }
+}
+
+.fa-play {
+  padding: 1.6rem;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: all 0.3s;
+  &:hover,
+  &:active {
+    color: #222;
+    transform: scale(0.97);
   }
 }
