@@ -2,6 +2,8 @@
   // --color-primary:
   --color-primary--dark: rgb(82, 26, 197);
   --color-primary--light: rgb(118, 23, 197);
+  --color-primary--1: rgb(118, 23, 197);
+
   --bg-primary: linear-gradient(
     to right,
     var(--color-primary--dark),
@@ -12,6 +14,20 @@
 @font-face {
   font-family: 'iranSans';
   src: url(../fonts/IRANSansWeb.ttf);
+}
+@font-face {
+  font-family: 'fa-brands';
+  src: url(../fonts/fa-brands-400.woff2);
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'fa-solid';
+  src: url(../fonts/fa-solid-900.woff2);
+  font-weight: 900;
+}
+@font-face {
+  font-family: 'themify';
+  src: url(../fonts/themify.woff);
 }
 
 * {
@@ -44,4 +60,9 @@ img {
 .heading-primary {
   font-size: 4rem;
   margin-bottom: 1.4rem;
+}
+.heading-tritiary {
+  font-size: 3rem;
+  line-height: 1.4;
+  color: rgb(27, 46, 75);
 }

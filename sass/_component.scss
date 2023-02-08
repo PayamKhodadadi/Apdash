@@ -26,6 +26,9 @@
 /////////////////////////
 /// HERO SECTION
 .hero {
+  &__content {
+    align-self: center;
+  }
   &__text {
     font-size: 2rem;
     margin-bottom: 3rem;
@@ -38,22 +41,23 @@
   }
 
   &__counter {
-    display: flex;
-
+    width: 90%;
     &-item {
       display: flex;
       align-items: center;
+      justify-content: center;
       gap: 1.5rem;
     }
 
-    &-number {
-      font-size: 2.5rem;
+    &-number span {
+      font-size: 2rem;
+      font-weight: 900;
     }
     &-title {
-      font-size: 1.8rem;
+      font-size: 1.5rem;
     }
     &-icon {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
     }
   }
 }
@@ -68,12 +72,13 @@
 }
 
 .btn {
+  text-decoration: none;
+
   &--download:link,
   &--download:visited {
     color: #fff;
-    padding: 1rem 4rem;
-    text-decoration: none;
     background-color: rgb(191, 0, 220);
+    padding: 1rem 4rem;
     border: none;
     border-radius: 100px;
     transition: all 0.3s;
@@ -84,6 +89,32 @@
   &--download:hover,
   &--download:active {
     background-color: rgb(147, 0, 169);
+  }
+
+  &--feature {
+    &-begin,
+    &-about {
+      border-radius: 5px;
+      padding: 0.8rem 3rem;
+      transition: all 0.3s;
+    }
+    &-begin {
+      color: #fff;
+      border: none;
+      background-color: rgb(150, 41, 230);
+      margin-left: 2rem;
+      &:hover {
+        background-color: rgb(109, 20, 174);
+      }
+    }
+    &-about {
+      border: 1px solid rgb(150, 41, 230);
+      color: rgb(150, 41, 230);
+      &:hover {
+        background-color: rgb(109, 20, 174);
+        color: #fff;
+      }
+    }
   }
 }
 
@@ -96,5 +127,105 @@
   &:active {
     color: #222;
     transform: scale(0.97);
+  }
+}
+
+/////////////////////////
+/// PROMO SECTION
+
+.promo {
+  &__card {
+    padding: 4.4rem 0.5rem;
+    box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    border: none;
+    border-radius: 3px;
+    &:not(:last-child) {
+      margin-left: 2.5rem;
+    }
+  }
+
+  &__icon {
+    font-size: 3.8rem;
+    color: var(--color-primary--1);
+  }
+
+  &__heading {
+    font-size: 2rem;
+  }
+
+  &__text {
+    font-size: 1.8rem;
+  }
+}
+
+///////////////
+/// //sec-content
+
+.sec {
+  &__content {
+    align-self: center;
+    font-size: 1.4rem;
+    color: #333;
+    line-height: 2;
+    *:not(:last-child) {
+      margin-bottom: 1.8rem;
+    }
+  }
+
+  &__text {
+  }
+
+  &__list {
+    list-style: none;
+
+    &-item {
+      position: relative;
+      padding-right: 2.5rem;
+
+      &::before {
+        content: '';
+        background-color: var(--color-primary--dark);
+        position: absolute;
+        right: 0;
+        top: 0.8rem;
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+        display: inline-block;
+      }
+    }
+  }
+
+  &-counter {
+    padding: 3rem;
+    text-align: center;
+    &-color {
+      color: var(--color-primary--dark);
+    }
+
+    &-item {
+      display: flex;
+      align-items: baseline;
+      justify-content: center;
+    }
+
+    &-num {
+      border-left: 1px solid #cdf;
+      padding-left: 3rem;
+    }
+  }
+
+  &__img-box {
+    text-align: center;
+  }
+}
+
+///////////////
+///FEATURE SECTION
+
+.feature {
+  &__content {
+    margin-right: 1.5rem;
+    padding-right: 1.5rem;
   }
 }

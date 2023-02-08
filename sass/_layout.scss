@@ -4,13 +4,15 @@
 }
 
 section {
-  padding: 3.5rem 0;
+  padding: 6rem 0;
+  margin-bottom: 6rem;
 }
 
 .section-hero {
   background-image: var(--bg-primary);
   position: relative;
   color: #fff;
+  padding-top: 1rem;
 }
 
 .section-hero::before {
@@ -39,7 +41,6 @@ section {
 .row {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .col {
