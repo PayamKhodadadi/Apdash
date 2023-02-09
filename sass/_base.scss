@@ -65,4 +65,7 @@ img {
   font-size: 3rem;
   line-height: 1.4;
   color: rgb(27, 46, 75);
+  &--white {
+    color: #fff;
+  }
 }

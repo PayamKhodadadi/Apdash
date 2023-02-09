@@ -33,6 +33,19 @@ section {
 //   }
 // }
 
+.section-download {
+  background-image: linear-gradient(
+      to right,
+      rgba(82, 26, 197, 0.9),
+      rgba(118, 23, 197, 0.9)
+    ),
+    url(../img/bg-apdashdl.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  object-fit: cove;
+}
+
 .container {
   max-width: 112.8rem;
   margin: 0 auto;
