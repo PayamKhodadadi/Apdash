@@ -61,11 +61,15 @@ img {
   font-size: 4rem;
   margin-bottom: 1.4rem;
 }
-.heading-tritiary {
+.heading-secondary {
   font-size: 3rem;
   line-height: 1.4;
   color: rgb(27, 46, 75);
   &--white {
     color: #fff;
   }
+}
+
+.opacity-feature {
+  opacity: 0.3;
 }
